@@ -93,20 +93,20 @@ const RegistrationForm: React.FC = () => {
             <FormInput id="aadharNumber" label="Aadhar Number" value={formData.aadharNumber} onChange={handleInputChange} placeholder="Enter your Aadhar number" />
           </div>
 
-          <FormInput id="address" label="Address" value={formData.address} onChange={handleInputChange} required placeholder="Enter your address" />
+          <FormInput id="address" label="Address" value={formData.address} onChange={handleInputChange} placeholder="Enter your address" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <FormSelect id="gender" label="Gender" options={GENDER_OPTIONS} value={formData.gender} onChange={handleSelectChange} required />
+              <FormSelect id="gender" label="Gender" options={GENDER_OPTIONS} value={formData.gender} onChange={handleSelectChange} />
               {formData.gender === 'other' && (
-                <FormTextArea id="genderOther" label="Please specify" value={formData.genderOther} onChange={handleTextAreaChange} required placeholder="Please specify your gender" rows={2} />
+                <FormTextArea id="genderOther" label="Please specify" value={formData.genderOther} onChange={handleTextAreaChange} placeholder="Please specify your gender" rows={2} />
               )}
             </div>
 
             <div>
-              <FormSelect id="problem" label="Problem Area" options={PROBLEM_OPTIONS} value={formData.problem} onChange={handleSelectChange} required />
+              <FormSelect id="problem" label="Problem Area" options={PROBLEM_OPTIONS} value={formData.problem} onChange={handleSelectChange} />
               {formData.problem === 'other' && (
-                <FormTextArea id="problemOther" label="Please specify" value={formData.problemOther} onChange={handleTextAreaChange} required placeholder="Please specify your problem" rows={2} />
+                <FormTextArea id="problemOther" label="Please specify" value={formData.problemOther} onChange={handleTextAreaChange} placeholder="Please specify your problem" rows={2} />
               )}
             </div>
           </div>
