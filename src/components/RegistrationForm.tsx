@@ -89,7 +89,7 @@ const RegistrationForm: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FormInput id="age" label="Age" type="number" value={formData.age} onChange={handleInputChange} required placeholder="Enter your age" />
+            <FormInput id="age" label="Age" type="number" value={formData.age} onChange={handleInputChange} placeholder="Enter your age" />
             <FormInput id="aadharNumber" label="Aadhar Number" value={formData.aadharNumber} onChange={handleInputChange} placeholder="Enter your Aadhar number" />
           </div>
 
